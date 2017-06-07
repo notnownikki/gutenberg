@@ -140,11 +140,11 @@ registerBlockType( 'core/embed', {
 			const { url, caption } = this.props.attributes;
 			const { setAttributes, focus, setFocus } = this.props;
 
-			if ( fetching ) {
+			if ( 1||fetching ) {
 				return (
-					<div className="blocks-embed__loading">
+					<div className="blocks-embed is-loading">
 						<Spinner />
-						<p className="blocks-embed__loading-text">{ wp.i18n.__( 'Embedding…' ) }</p>
+						<p>{ wp.i18n.__( 'Embedding…' ) }</p>
 					</div>
 				);
 			}
